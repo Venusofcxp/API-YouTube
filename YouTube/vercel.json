@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "YouTube/YouTube.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "YouTube/YouTube.py"
+    }
+  ]
+}
